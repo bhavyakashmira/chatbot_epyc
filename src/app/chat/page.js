@@ -5,11 +5,6 @@ import { PiListDashes } from "react-icons/pi";
 import { IoChatbubbleEllipsesOutline } from "react-icons/io5";
 
 const ChatLayout = () => {
-
-   
-
-  
-
     return (
         <div className="min-h-screen bg-[#0D1E1F] text-white flex">
 
@@ -25,10 +20,7 @@ const ChatLayout = () => {
                         <IoChatbubbleEllipsesOutline size={32} color='#FFDDBD' />
                     </div>
                     <span className='text-center text-sm '>Start a new conversation</span>
-                </div>
-               
-                
-                
+                </div>   
                 
             </div>
             <main className="flex-1 p-5 m-5 ">
