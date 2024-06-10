@@ -1,17 +1,20 @@
+"use client"
 import Image from "next/image";
 import Link from "next/link";
 import { FaArrowRightLong } from "react-icons/fa6";
 
 export default function explore() {
+    const username = localStorage.getItem("username");
     return (
         <main className=" bg-[#0D1E1F] flex min-h-screen flex-col items-center justify-between ">
-
        <div className="m-10" >
             <div className="flex justify-start gap-8 items-center " >
                     <div className="rounded-full overflow-hidden bg-transparent border border-[#2A7D82] p-2 w-15 h-12 flex items-center justify-center">
                         <img src="/logo.png" alt="Logo" className="w-full h-full object-cover" />
                     </div>
-                    <div><h1 className="text-white text-3xl " >What should we first talk about , name ?</h1></div>
+                    <div><h1 className="text-white text-3xl " >What should we first talk about , {username} ?</h1></div>
+
+                    
            
             
                 </div>

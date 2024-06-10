@@ -11,27 +11,27 @@ export default function topics() {
                 <img src="/logo.png" alt="Logo" className="w-full h-full object-cover" />
             </div>
             <div>
-                <h1 className="text-white text-3xl">I can help you with ...</h1>
+                <h1 className="text-white font-serif  text-3xl">I can help you with ...</h1>
             </div>
         </div>
-        <Link href="/explore" className="mt-4 border border-[#2A7D82] p-3 rounded-lg bg-[#FFDDBD] text-black transition-transform duration-300 hover:scale-105">Continue →</Link>
+        <Link href="/name" className="m-4  border border-[#2A7D82] p-3 rounded-lg bg-[#FFDDBD] text-black transition-transform duration-300 hover:scale-105">Continue →</Link>
         
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 p-10 mt-8">
             <div className="hover:scale-105 transition-transform duration-300">
-                <Image src="/challenges.png" height="400" width="300" alt="Challenges" />
-                <p className="text-white mt-2 text-center">What's the biggest challenges in a founder's life?</p>
+                <Image src="/challenges1.png" height="400" width="300" alt="Challenges" />
+              
             </div>
             <div className="hover:scale-105 transition-transform duration-300">
-                <Image src="/trends.png" height="400" width="300" alt="Trends" />
-                <p className="text-white mt-2 text-center">Exciting trends in industry right now?</p>
+                <Image src="/trend.png" height="400" width="300" alt="Trends" />
+            
             </div>
             <div className="hover:scale-105 transition-transform duration-300">
-                <Image src="/funds.png" height="400" width="300" alt="Funds" />
-                <p className="text-white mt-2 text-center">How to raise funds for my fintech startup?</p>
+                <Image src="/fund.png" height="400" width="300" alt="Funds" />
+             
             </div>
             <div className="hover:scale-105 transition-transform duration-300">
-                <Image src="/trends.png" height="400" width="300" alt="Trends" />
-                <p className="text-white mt-2 text-center">What's the biggest challenges in a founder's life?</p>
+                <Image src="/trend1.png" height="400" width="300" alt="Trends" />
+              
             </div>
         </div>
        
