@@ -8,7 +8,7 @@ export default function Topics() {
     <div className="">
         <div className="flex justify-start gap-8 items-center m-5">
             <div className="rounded-full overflow-hidden bg-transparent border border-[#2A7D82] p-2 w-15 h-12 flex items-center justify-center">
-                <Image src="/logo.png"  alt="Logo" className="w-full h-full object-cover" />
+                <Image src="/chatavatar.png" width={100} height={100}  alt="Logo" className="w-full h-full object-cover" />
             </div>
             <div>
                 <h1 className="text-white font-serif  text-3xl">I can help you with ...</h1>
