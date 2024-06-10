@@ -2,13 +2,13 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaArrowRightLong } from "react-icons/fa6";
 
-export default function topics() {
+export default function Topics() {
     return (
      <main className="bg-[#0D1E1F] flex min-h-screen flex-col items-center justify-between p-10 ">
     <div className="">
         <div className="flex justify-start gap-8 items-center m-5">
             <div className="rounded-full overflow-hidden bg-transparent border border-[#2A7D82] p-2 w-15 h-12 flex items-center justify-center">
-                <img src="/logo.png" alt="Logo" className="w-full h-full object-cover" />
+                <Image src="/logo.png"  alt="Logo" className="w-full h-full object-cover" />
             </div>
             <div>
                 <h1 className="text-white font-serif  text-3xl">I can help you with ...</h1>

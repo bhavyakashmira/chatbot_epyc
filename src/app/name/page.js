@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useState , useEffect } from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
 
-export default function name() {
+export default function Name() {
      
     const [username, setUsername] = useState("");
     useEffect(() => {
