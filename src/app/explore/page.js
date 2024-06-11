@@ -1,10 +1,15 @@
 "use client"
+import React , {useEffect} from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { FaArrowRightLong } from "react-icons/fa6";
 
 export default function Explore() {
-    const username = localStorage.getItem("username");
+    var username = ""
+    useEffect(() => {
+        username = localStorage.getItem("username")
+    }, [])
+
     return (
         <main className=" bg-[#0D1E1F] flex min-h-screen flex-col items-center justify-between ">
        <div className=" m-10" >
