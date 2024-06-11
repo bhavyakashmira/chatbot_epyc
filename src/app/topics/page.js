@@ -16,7 +16,7 @@ export default function Topics() {
         </div>
         <Link href="/name" className="m-4  border border-[#2A7D82] p-3 rounded-lg bg-[#FFDDBD] text-black transition-transform duration-300 hover:scale-105">Continue →</Link>
         
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 p-10 mt-8">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 p-10 mt-8">
             <div className="hover:scale-105 transition-transform duration-300">
                 <Image src="/challenges1.png" height="400" width="300" alt="Challenges" />
               

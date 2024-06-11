@@ -26,36 +26,35 @@ export default function Name() {
 
             <div className="absolute bottom-0 left-0 md:inset-0   " >
                 <div className=" px-2  py-20 ">
-                    <div className="sm:flex  justify-start gap-8 items-center">
-                        <div className=" rounded-full overflow-hidden bg-transparent border border-[#2A7D82] p-2 sm:w-15 sm:h-12 sm:flex items-center justify-center">
-                            <img src="/chatavatar.png" alt="Logo" className="w-full h-full object-cover hidden sm:block " />
-                            <Image src="/avatar.png" className="sm:hidden w-full h-full object-cover  "  height="50" width="50" />
-
+                    <div className="sm:flex p-10    justify-start gap-8 items-center">
+                        <div className="  flex justify-center p-10 sm:p-1 " >
+                            <Image className='hidden sm:block' src="/chatavatar.png" alt="Logo" width="500" height="500" style={{ height: "auto", width: "auto" }} />
+                            <Image className=' sm:hidden  ' src="/avatar.png" alt="Logo" width="90" height="90" />
                         </div>
                         <div>
-                            <h1 className="text-white font-serif font-normal  md:h-[48px]  text-center text-lg sm:m-0 sm:text-3xl">
+                            <h1 className="text-white  font-serif font-normal  md:h-[48px]  text-center text-lg sm:m-0 sm:text-3xl">
                                 Hi, my name is Dexter! What’s your name?
                             </h1>
                         </div>
                     </div>
 
-                    <div className="flex items-center border border-[#2A7D82] rounded-lg bg-transparent p-3 sm:p-8 sm:m-10">
+                    <div className="flex items-center border border-[#2A7D82] rounded-lg bg-transparent mr-10 ml-10  p-3 sm:p-8 sm:m-10">
                         <input
                             type="text"
                             value={username}
                             onChange={(e) => setUsername(e.target.value)}
                             placeholder="Your first name..."
-                            className="sm:text-3xl font-serif bg-transparent flex-1 focus:outline-none text-white"
+                            className="sm:text-3xl font-serif p-4 sm:p-0 bg-transparent flex-1 focus:outline-none text-white"
                         />
                     </div>
 
-                    <Link href="/explore" className="text-white border text-lg  m-3 border-[#2A7D82] sm:p-3 rounded-b-lg bg-[#0B3538] hover:bg-[#FFDDBD] hover:text-black">
+                    <Link href="/explore" className="text-white border text-lg flex justify-center ml-20 mr-20 m-2 max-w-[150px]  border-[#2A7D82] sm:p-3 sm:m-6 rounded-b-lg bg-[#0B3538] hover:bg-[#FFDDBD] hover:text-black">
                         Continue →
                     </Link>
                 </div>
 
                 <div className="w-full">
-                    <Image src="/bg.png" width={2000} height={100} quality={100} />
+                    <Image src="/bg.png" alt="background" width={2000} height={100} quality={100} />
                 </div>
             </div>
            
