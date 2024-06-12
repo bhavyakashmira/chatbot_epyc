@@ -3,6 +3,9 @@ import Sidebar from '@/components/Sidebar';
 import Image from 'next/image';
 
 const ChatLayout = () => {
+
+
+    
     return (
         <div className=" relative bg-[#0D1E1F] text-white ">
             <div className='absolute inset-0'>

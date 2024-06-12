@@ -1,21 +1,25 @@
 "use client"
-import React , {useEffect} from "react";
+import React , {useEffect ,useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { FaArrowRightLong } from "react-icons/fa6";
 
 export default function Explore() {
-    var username = ""
+    const [username, setUsername] = useState("");
+
     useEffect(() => {
-        username = localStorage.getItem("username")
-    }, [])
+        const storedUsername = localStorage.getItem('username');
+        if (storedUsername) {
+            setUsername(storedUsername);
+        }
+    }, []);
 
     return (
         <main className=" bg-[#0D1E1F] flex min-h-screen flex-col items-center justify-between ">
        <div className=" m-10" >
             <div className="flex justify-start gap-8 items-center " >
                     <div className=" p-10 sm:p-1 " >
-                        <Image className='hidden sm:block' src="/chatavatar.png" alt="Logo" width="200" height="200" style={{ height: "auto", width: "auto" }} />
+                        <Image className='hidden sm:block' src="/botavatar.png" alt="Logo" width="200" height="200" style={{ height: "auto", width: "auto" }} />
                         <Image className='block sm:hidden' src="/avatar.png" alt="Logo" width="90" height="90" />
                     </div>
                     <div><h1 className="text-white text-3xl " >What should we first talk about , {username} ?</h1></div>

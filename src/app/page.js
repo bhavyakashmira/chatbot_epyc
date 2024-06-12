@@ -11,7 +11,7 @@ export default function Home() {
 
 
   return (
-    <main className=" bg-[#0D1E1F] flex min-h-screen md:p-5  flex-col items-center justify-between p-20 ">
+    <main className=" bg-[#0D1E1F] flex min-h-screen max-w-screen md:py-10  flex-col items-center justify-between p-20 ">
       <div className="flex flex-col justify-center items-center m-10 sm:m-0 ">
 
         <div className=" p-10 sm:p-1 " >

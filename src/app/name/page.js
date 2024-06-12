@@ -12,8 +12,9 @@ export default function Name() {
         if (savedUsername) {
             setUsername(savedUsername);
         }
-        console.log(localStorage.getItem('username'));
+       
     }, []);
+
     useEffect(() => {
         if (username) {
             localStorage.setItem('username', username);
@@ -25,7 +26,7 @@ export default function Name() {
         <main className=" relative bg-[#0D1E1F] min-h-screen">
 
             <div className="absolute bottom-0 left-0 md:inset-0   " >
-                <div className=" px-2  py-20 ">
+                <div className=" px-2  py-10 ">
                     <div className="sm:flex p-10    justify-start gap-8 items-center">
                         <div className="  flex justify-center p-10 sm:p-1 " >
                             <Image className='hidden sm:block' src="/chatavatar.png" alt="Logo" width="500" height="500" style={{ height: "auto", width: "auto" }} />
