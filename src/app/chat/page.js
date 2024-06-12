@@ -1,7 +1,6 @@
-import CharArea from '../../components/CharArea.jsx';
+import ChatArea from "../../components/ChatArea"
 import Sidebar from '../../components/Sidebar';
 import Image from 'next/image';
-
 const ChatLayout = () => {
 
 
@@ -14,7 +13,7 @@ const ChatLayout = () => {
 
             <div className='relative flex min-h-screen'>
                 <Sidebar />
-                <CharArea />
+                <ChatArea />
             </div>
            
            

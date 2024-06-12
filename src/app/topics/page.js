@@ -1,10 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
-
+import { data } from "../../constant/data.js"
+import MarqueeDemo from "../../components/TopicCard.jsx"
 
 export default function Topics() {
     return (
-     <main className="bg-[#0D1E1F] flex min-h-screen flex-col items-center justify-between  ">
+        <main className="bg-[#0D1E1F] flex min-h-screen flex-col items-center justify-between  ">
+            
         <div className=" m-3">
                 <div>
                     <div className="flex justify-start gap-8 items-center m-5">
@@ -20,23 +22,8 @@ export default function Topics() {
         </div>
        
         
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 p-10 mt-4">
-            <div className="">
-                <Image src="/challenge.png" height="200" width="200" alt="Challenges" />
-              
-            </div>
-            <div className="">
-                <Image src="/funds.png" height="200" width="200" alt="Trends" />
-            
-            </div>
-            <div className="">
-                <Image src="/founder.png" height="200" width="200" alt="Funds" />
-             
-            </div>
-            <div className="">
-                <Image src="/trend1.png" height="200" width="200" alt="Trends" />
-             </div>
-            
+        <div className=" gap-10 m-10 px-20  mt-4">
+                    <MarqueeDemo />
                 </div>
                 <div className=" w-full  ">
                     <Image src="/bg.png" alt="grid" width={2000} height={100} quality={100} />
