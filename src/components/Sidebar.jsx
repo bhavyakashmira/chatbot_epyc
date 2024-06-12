@@ -17,7 +17,6 @@ function Sidebar() {
               </div>
               <span className='text-center font-lato text-sm '>Start a new conversation</span>
           </div>
-
       </div>
   )
 }

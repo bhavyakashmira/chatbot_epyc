@@ -2,6 +2,9 @@ import React, { useState, useEffect ,useRef } from 'react';
 import Image from 'next/image'; 
 import { FaArrowRightLong } from "react-icons/fa6";
 import TypingAnimation from './magicui/typing-animation';
+import SlightFlip from './magicui/flip-text';
+import BoxReveal from './magicui/box-reveal';
+import Card from "./Card.jsx"
 
 function Chat() {
 
@@ -49,7 +52,8 @@ function Chat() {
         1. Self-funding, Crowdfunding, or Strategic Partnerships: Initially, you can consider     \n self-funding, crowdfunding, or forming strategic partnerships. You can also \n explore government grants or research grants if applicable.
         2. Angel Investors and Incubators: In the early stages, you can look at angel \n investors or consider applying to various incubators and accelerator programs.
         3. Venture Capital: If you decide to pursue funding from an institutional investor,\n venture capital firms could be a good option.`,
-                    image: "chatbot"
+            image: "chatbot",
+            card:false
         },
         {
             sender: 'chatbot',
@@ -60,7 +64,8 @@ Angel Investors and Incubators: In the early stages, you can look at angel inves
 Venture Capital: If you decide to pursue funding from an institutional investor, venture capital firms could be a good option.
 
 Check our articles below for some more help:`,
-            image: "chatbot"
+            image: "chatbot",
+            card:true
         },
      
         
@@ -81,10 +86,6 @@ Check our articles below for some more help:`,
 
     return (
         <main className="flex-1 p-5 m-5">
-             
-          
-
-
             <div ref={chatContainerRef} className="bg-[#12343B] p-10 rounded-b-xl h-[350px] overflow-y-scroll no-scrollbar ">
                 <div className="flex flex-col gap-4 p-5 ">
                     {messages.map((msg, index) => (
@@ -95,10 +96,15 @@ Check our articles below for some more help:`,
                             <div className={`rounded-lg text-white ${msg.sender === 'user' ? 'border p-4 border-[#2A7D82]' : ' '}`}>
                                 {msg.sender == 'user' ?
                                     <p className="whitespace-pre-wrap text-lg font-lato">{msg.message}</p> :
-                                    <TypingAnimation
-                                        className="whitespace-pre-wrap text-lg font-lato"
-                                        text={msg.message}
-                                    />
+                                    <BoxReveal boxColor={"#2A7D82"} duration={0.5} >
+                                        <TypingAnimation
+                                            className="whitespace-pre-wrap text-lg font-lato"
+                                            text={msg.message}
+                                        />
+                                     {msg.card?<Card/>:<></>}
+
+                                    </BoxReveal>
+                                 
                                     
                                 }
                               
@@ -106,14 +112,19 @@ Check our articles below for some more help:`,
                             </div>
                         </div>
                     ))}
+                    
                     {isLoading && (
                         <div className="flex justify-start gap-4 items-start">
                             <div className="rounded-full overflow-hidden bg-transparent border border-[#2A7D82] p-2 w-10 h-10 flex items-center justify-center">
                                 <Image src="/chatbot.png" height={40} width={40} alt="chatbot" className="w-full h-full object-cover" />
                             </div>
-                            <div className="rounded-lg text-white border p-4 border-[#2A7D82]">
-                                <p className="whitespace-pre-wrap text-lg font-lato">Dexter is thinking</p>
-                            </div>
+                      
+                                <SlightFlip
+                                    className="text-lg  tracking-[-0.1em] text-white "
+                                    word="dexter is thinking ..."
+                                />
+                         
+                           
                         </div>
                     )}
                 </div>

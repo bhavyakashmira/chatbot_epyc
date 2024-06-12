@@ -17,14 +17,18 @@ export default function Explore() {
     return (
         <main className=" bg-[#0D1E1F] flex min-h-screen flex-col items-center justify-between ">
        <div className=" m-10" >
-            <div className="flex justify-start gap-8 items-center " >
-                    <div className=" p-10 sm:p-1 " >
-                        <Image className='hidden sm:block' src="/botavatar.png" alt="Logo" width="200" height="200" style={{ height: "auto", width: "auto" }} />
-                        <Image className='block sm:hidden' src="/avatar.png" alt="Logo" width="90" height="90" />
+            <div className=" sm:flex p-10    justify-start gap-8 items-center">
+                        <div className="  flex justify-center p-10 sm:p-1 " >
+                            <Image className='hidden sm:block' src="/chatavatar.png" alt="Logo" width="500" height="500" style={{ height: "auto", width: "auto" }} />
+                            <Image className=' sm:hidden  ' src="/avatar.png" alt="Logo" width="90" height="90" />
+                        </div>
+                        <div>
+                            <h1 className="text-white  font-serif font-normal  md:h-[48px]  text-center text-lg sm:m-0 sm:text-3xl">
+                                Hi, my name is Dexter! What’s your name?
+                            </h1>
+                        </div>
                     </div>
-                    <div><h1 className="text-white text-3xl " >What should we first talk about , {username} ?</h1></div>
-                </div>
-                <div className="flex gap-10 p-10">
+                <div className="grid  grid-cols-4 gap-10 p-10 ">
                     <div className="hover:scale-105 transition-transform duration-300">
                         <Image  src="/trend.png" height="400" width="300" alt="Trends" />
                     </div>
