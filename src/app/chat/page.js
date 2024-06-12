@@ -1,5 +1,5 @@
-import CharArea from '@/components/CharArea';
-import Sidebar from '@/components/Sidebar';
+import CharArea from '../../components/CharArea.jsx';
+import Sidebar from '../../components/Sidebar';
 import Image from 'next/image';
 
 const ChatLayout = () => {
