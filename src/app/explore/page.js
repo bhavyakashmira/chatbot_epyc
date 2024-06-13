@@ -26,7 +26,7 @@ export default function Explore() {
                     {/* Container for the avatar and greeting message */}
                     <div className="flex justify-center p-10 sm:p-1">
                         {/* Avatar images for different screen sizes */}
-                        <Image className="hidden sm:block" src="/chatavatar.png" alt="Logo" width="500" height="500" style={{ height: "auto", width: "auto" }} />
+                        <Image className="hidden sm:block" src="/botavatar.png" alt="Logo" width="500" height="500" style={{ height: "auto", width: "auto" }} />
                         <Image className="sm:hidden" src="/avatar.png" alt="Logo" width="90" height="90" />
                     </div>
                     <div>
@@ -35,7 +35,7 @@ export default function Explore() {
                         </h1>
                     </div>
                 </div>
-                <div className="grid grid-cols-4 gap-10 p-10">
+                <div className="grid grid-cols-2 sm:grid-cols-4 gap-10 p-10">
                     {/* Grid container for the explore cards */}
                     {exploredata.map((image, index) => (
                         <Link href="/chat" key={index}>
