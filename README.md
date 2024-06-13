@@ -19,30 +19,53 @@ The chatbot functionality is implemented using predefined messages to respond to
 
 ## Instructions to Run Locally
 
-1. **Clone the Repository**:
- git clone https://github.com/bhavyakashmira/chatbot_epyc
-
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+## Installation
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/bhavyakashmira/chatbot_epyc.git
+    cd chatbot_epyc
+    ```
+2. Install the dependencies:
+    ```bash
+    npm install
+    ```
+    or
+    ```bash
+    yarn install
+    ```
 
-First, run the development server:
+## Running the Project
+1. Start the development server:
+    ```bash
+    npm run dev
+    ```
+    or
+    ```bash
+    yarn dev
+    ```
+2. Open your browser and navigate to `http://localhost:3000`.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Building the Project
+To create an optimized production build:
+1. Build the project:
+    ```bash
+    npm run build
+    ```
+    or
+    ```bash
+    yarn build
+    ```
+2. Start the production server:
+    ```bash
+    npm start
+    ```
+    or
+    ```bash
+    yarn start
+    ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
 ## Learn More
 
@@ -62,6 +85,23 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 4. **Access the Application**: 
 Open a web browser and go to `http://localhost:3000`
+
+## Contributing
+1. Fork the repository.
+2. Create your feature branch:
+    ```bash
+    git checkout -b feature/your-feature
+    ```
+3. Commit your changes:
+    ```bash
+    git commit -m 'Add your feature'
+    ```
+4. Push to the branch:
+    ```bash
+    git push origin feature/your-feature
+    ```
+5. Open a pull request.
+
 
 ## Assumptions or Decisions Made
 
