@@ -22,7 +22,7 @@ function HomepageCard() {
                       </p>
                       <hr className="border-[#2A7D82] border" />
                       <div className="flex justify-center m-2">
-                          <a href="/topics" className="border font-lato p-2 bg-[#FFDDBD] text-black text-base font-bold rounded-lg">
+                          <a href="/name" className="border font-lato p-2 bg-[#FFDDBD] text-black text-base font-bold rounded-lg">
                               Let&apos;s get started! →
                           </a>
                       </div>
